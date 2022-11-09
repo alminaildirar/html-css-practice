@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-image">
+          <img src="./assets/shoe.png" alt="" class="img-responsive" />
+        </div>
+        <span class="card-heading">Nike</span>
+        <div class="card-body">
+          <h5 class="card-title">Nike Shoes</h5>
+          <div class="variant-holder">
+            <div class="variant-size">
+              <label class="variant-title">SIZE :</label>
+              <ul>
+                <li>
+                  <input type="radio" name="size" value="7" id="7" />
+                  <label for="7">7</label>
+                </li>
+                <li>
+                  <input type="radio" name="size" value="8" id="8" />
+                  <label for="8">8</label>
+                </li>
+                <li>
+                  <input type="radio" name="size" value="9" id="9" checked />
+                  <label for="9">9</label>
+                </li>
+                <li>
+                  <input type="radio" name="size" value="10" id="10" />
+                  <label for="10">10</label>
+                </li>
+              </ul>
+            </div>
+            <div class="variant-color">
+              <label class="variant-title">Color :</label>
+              <ul>
+                <li>
+                  <input
+                    type="radio"
+                    name="color"
+                    value="light-green"
+                    id="light-green"
+                    checked
+                  />
+                  <label for="light-green">green color</label>
+                </li>
+                <li>
+                  <input type="radio" name="color" value="blue" id="blue" />
+                  <label for="blue">blue color</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="color"
+                    value="dark-blue"
+                    id="dark-blue"
+                  />
+                  <label for="dark-blue">dark blue color</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

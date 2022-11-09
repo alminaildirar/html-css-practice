@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Teams</title>
+</head>
+<body>
+  <div class="container">
+    <div class="titlebar">
+      <div class="actions">
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-angle-right"></i>
+        <div class="search">
+          <input type="text" placeholder="Search.." name="search">
+        </div>
+      </div>
+      <div class="account-info">
+        <i class="fa-solid fa-ellipsis"></i>
+        <div class="image-holder">
+          <img class="img-responsive img-profile" src="./assets/joey-tribbiani.png" alt="avatar">
+          <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+        </div>
+      </div>
+    </div>
+    <div class="appbar">
+      <div class="icons-holder">
+        <ul>
+          <li>
+            <input type="radio" name="app-section" value="activity" id="activity" />
+            <label for="activity"><span><i class="fa-regular fa-bell"></i></span>Activity</label>
+          </li>
+          <li>
+            <input type="radio" name="app-section" value="chat" id="chat" checked />
+            <label for="chat"><span><i class="fa-regular fa-comment-dots"></i></span>Chat</label>
+          </li>
+          <li>
+            <input type="radio" name="app-section" value="teams" id="teams" />
+            <label for="teams"><span><i class="fa-solid fa-people-group"></i></span>Teams</label>
+          </li>
+          <li>
+            <input type="radio" name="app-section" value="calender" id="calender" />
+            <label for="calender"><span><i class="fa-regular fa-calendar"></i></span>Calender</label>
+          </li>
+          <li>
+            <input type="radio" name="app-section" value="call" id="call" />
+            <label for="call"><span> <i class="fa-solid fa-phone"></i></span>Call</label>
+          </li>
+          <li>
+            <input type="radio" name="app-section" value="file" id="file" />
+            <label for="file"><span><i class="fa-regular fa-file"></i></i></span>Files</label>
+          </li>
+          <li>
+            <input type="radio" name="app-section" value="more" id="more" />
+            <label for="more"><span><i class="fa-solid fa-ellipsis"></i></i></i></span></label>
+          </li>
+          <li>
+            <input type="radio" name="app-section" value="apps" id="apps" />
+            <label for="apps"><span><i class="fa-solid fa-border-all"></i></span>Apps</label>
+          </li>
+
+          <li>
+            <input type="radio" name="app-section" value="help" id="help" />
+            <label for="help"><span><i class="fa-regular fa-circle-question"></i></span>Help</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="left-rail">
+      <div class="left-rail-header">
+        <div class="info">
+          <h2>Chat</h2>
+          <span><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+        <div class="actions">
+          <span><i class="fa-solid fa-grip-lines"></i></span>
+          <span><i class="fa-regular fa-pen-to-square"></i></span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="collapses">
+          <div class="collapse-pinned">
+            <div class="collapse-title">
+              <h4><label for="pinned">Pinned</label></h4>
+            </div>
+            <input type="checkbox" name="chk" id="pinned" checked />
+            <div class="collapse-body">
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/joey-tribbiani.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Joey Tribbiani</p>
+                    <p class="message-preview">The fridge broke, so i had to eat everything!</p>
+                  </div>
+                  <p class="contact-date">3.11</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse-recent">
+            <div class="collapse-title">
+              <h4><label for="recent">Recent</label></h4>
+            </div>
+            <input type="checkbox" name="chk" id="recent" checked />
+            <div class="collapse-body">
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/rachel-green.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Rachel Green</p>
+                    <p class="message-preview">Let's go shopping to Bloomingdale's</p>
+                  </div>
+                  <p class="contact-date">4.11</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/chandler-bing.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Chandler Bing</p>
+                    <p class="message-preview">Did you feed the duck and the chick?</p>
+                  </div>
+                  <p class="contact-date">2.11</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/monica-geller.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Monica Geller</p>
+                    <p class="message-preview">I knooooowwwww!!!!!!!!</p>
+                  </div>
+                  <p class="contact-date">3.11</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/phoebe-buffay.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Phoebe Buffay</p>
+                    <p class="message-preview">Everbody looks so happy, i hate that!</p>
+                  </div>
+                  <p class="contact-date">3.11</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/ross-geller.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Ross Geller</p>
+                    <p class="message-preview">Heyyy, we were on a break!</p>
+                  </div>
+                  <p class="contact-date">3.11</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/janice.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Janice Hosenstein</p>
+                    <p class="message-preview">Oh my god!!!</p>
+                  </div>
+                  <p class="contact-date">2.10</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/chick.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Chick Bing</p>
+                    <p class="message-preview">Hey, DUCK HİT ME! 🥺🥺</p>
+                  </div>
+                  <p class="contact-date">3.11</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/duck.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Duck Tribbiani</p>
+                    <p class="message-preview">Let your chick leave the house</p>
+                  </div>
+                  <p class="contact-date">2.10</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/gunther.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Gunther Perk</p>
+                    <p class="message-preview">Do you know, where is Rachel??</p>
+                  </div>
+                  <p class="contact-date">3.11</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/ben.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Ben Geller</p>
+                    <p class="message-preview">Monica BANGG!! </p>
+                  </div>
+                  <p class="contact-date">2.10</p>
+                </div>
+              </div>
+              <div class="contact-info">
+                <div class="image-holder">
+                  <img class="img-responsive img-profile" src="./assets/emma.png" alt="avatar">
+                  <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+                </div>
+                <div class="contact">
+                  <div class="contact-detail">
+                    <p class="title">Emma Geller-Green</p>
+                    <p class="message-preview">sing that rap song</p>
+                  </div>
+                  <p class="contact-date">2.10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thread">
+      <div class="thread-header">
+        <div class="chat-info">
+          <div class="image-holder">
+            <img class="img-responsive img-profile" src="./assets/phoebe-buffay.png" alt="avatar">
+            <img class="img-responsive img-status" src="./assets/tick.png" alt="status">
+          </div>
+          <h4 class="contact-name">Buffay, Phoebe</h4>
+          <p class="chat-section">Chat</p>
+          <p class="more-section">3 more<span><i class="fa-solid fa-chevron-down"></i></span></p>
+          <span><i class="fa-solid fa-plus"></i></span>
+        </div>
+        <div class="chat-icons">
+          <div class="call-icons">
+            <span><i class="fa-solid fa-video"></i></span>
+            <span><i class="fa-solid fa-phone"></i></span>
+          </div>
+          <div class="action-icons">
+            <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            <span><i class="fa-solid fa-user-plus"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="thread-content">
+        <div class="content-messages">
+
+          <div class="message user-message">
+            <p><span><span>3.11 13:45</span></span><br>Well, i tried everything, I give up 🥺</p>
+          </div>
+          <div class="message user-message">
+            <p>I'm not gonna be the mom who makes the world's best chocolate cookies. 🍪 🍪 </p>
+          </div>
+          <div class="message user-message">
+            <p>Come on isn't there any relative that would have the recipe???? 🥹 🥹</p>
+          </div>
+          <div class="message contact-message">
+            <p><span>Buffay, Phoebe <span>3.11 13:50</span></span><br>You know i may have relatives in France who would know.</p>
+          </div>
+          <div class="message contact-message">
+            <p>My grandma said she got the recipe from her grandma</p>
+          </div>
+          <div class="message contact-message">
+            <p>Nesele Tolouse</p>
+          </div>
+          <div class="message user-message">
+            <p><span><span>3.11 13:52</span></span><br>What was her name?????</p>
+          </div>
+          <div class="message contact-message">
+            <p><span>Buffay, Phoebe <span>3.11 13:53</span></span><br>Nesele Tolouseeee!!!!</p>
+          </div>
+          <div class="message user-message">
+            <p><span><span>3.11 13:54</span></span><br>Nestle Tollhouse??</p>
+          </div>
+          <div class="message contact-message">
+            <p><span>Buffay, Phoebe <span>3.11 13:55</span></span><br>Oh, you Americans always butcher the French Language 🙄</p>
+          </div>
+        </div>
+      </div>
+      <div class="thread-footer">
+        <textarea name="message" rows="2" placeholder="Type a new message"></textarea>
+        <div class="message-icons">
+          <span><i class="fa-solid fa-pencil"></i></span>
+          <span><i class="fa-solid fa-exclamation"></i></span>
+          <span><i class="fa-solid fa-paperclip"></i></span>
+          <span><i class="fa-regular fa-face-smile"></i></span>
+          <span><i class="fa-regular fa-file"></i></span>
+          <span><i class="fa-solid fa-medal"></i></span>
+          <span><i class="fa-regular fa-pen-to-square"></i></span>
+          <span><i class="fa-solid fa-ellipsis"></i></span>
+          <span><i class="fa-regular fa-paper-plane"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

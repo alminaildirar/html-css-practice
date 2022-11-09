@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="button-holder">
+          <button class="button-previous">
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+          </button>
+          <button class="button-next">
+            <i class="fa-solid fa-arrow-right fa-lg"></i>
+          </button>
+        </div>
+        <div class="logo-wrapper">
+          <div class="image-holder">
+            <img
+              src="./assets/starwars-logo.png"
+              alt=""
+              class="img-responsive"
+            />
+          </div>
+        </div>
+        <div class="image-holder">
+          <img src="./assets/helmet.png" alt="" class="img-responsive" />
+        </div>
+        <div class="info-wrapper">
+          <div class="description">
+            <h1 class="card-title">Stormtrooper Helmet</h1>
+            <p><span class="price">$1,299.99</span></p>
+            <div class="card-detail">
+              <div class="variant-size">
+                <div class="variant-size">
+                  <label class="variant-title"> HELMET SIZE</label>
+                  <ul>
+                    <li>
+                      <input type="radio" name="size" value="S" id="S" />
+                      <label for="S">S</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="size" value="M" id="M" />
+                      <label for="M">M</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="size" value="L" id="L" />
+                      <label for="L">L</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="size"
+                        value="XL"
+                        id="XL"
+                        checked
+                      />
+                      <label for="XL">XL</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="rate">
+                <div class="circle-border">
+                  <div class="circle">75%</div>
+                </div>
+                <div class="rate-title">Durability Rate</div>
+              </div>
+            </div>
+            <div class="card-action">
+              <button class="add-button" type="submit">Add to card</button>
+              <button class="wishlist-button">
+                <i class="fa-solid fa-heart fa-lg"></i
+                ><span>Add to wishlist</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
